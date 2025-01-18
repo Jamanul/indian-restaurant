@@ -91,11 +91,18 @@ a {
   font-size: 64px;
   line-height: 40px;
 }
-.nav-center {
+#nav {
   gap: 40px;
   align-items: center;
   padding-left: 120px;
+  display: flex;
+  font-size: 18px;
 }
+
+#nav ul li a {
+  width: max-content;
+}
+
 .nav-first {
   justify-content: space-between;
   width: 100%;
@@ -104,7 +111,7 @@ a {
 .nav-button {
   border-radius: 9999px;
   background: #000;
-  padding: 15px 14px;
+  padding: 14px 14px;
 }
 
 .nav-right {
@@ -115,6 +122,7 @@ a {
   padding: 12px 20px;
   border-radius: 32px;
   border: none;
+  width: max-content;
 }
 
 .nav-title {

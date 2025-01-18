@@ -1,0 +1,245 @@
+:root {
+    --primary: tomato;
+}
+img {
+    width: 100% !important;
+     height: auto;
+}
+.logo{
+    width: 50% !important;
+}
+body {
+    font-family: "Roboto", serif !important;
+}
+
+/* Main Navigation Styling */
+
+
+/* Styling for the top-level menu items */
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;  /* Flexbox layout for horizontal menu */
+}
+
+/* Styling for each list item (menu item) */
+nav ul li {
+    position: relative;
+}
+
+/* Styling for the anchor tags (menu links) */
+nav a {
+    display: block;
+    color: black;
+    padding: 14px 20px;
+    text-decoration: none;
+}
+
+/* Hover effect for main menu items */
+nav ul li a:hover {
+    background-color: #555;
+}
+
+/* Hidden submenu (dropdown) */
+nav ul li ul {
+    display: none;
+    position: absolute;
+    top: 100%;  /* Align dropdown below parent */
+    left: 0;
+    background-color: #333;
+    min-width: 200px;
+    z-index: 999; /* Ensures dropdown appears above other content */
+}
+
+/* Show dropdown when hovering over the parent item */
+nav ul li:hover > ul {
+    display: block;
+}
+
+/* Styling for dropdown menu items */
+nav ul li ul li a {
+    padding: 10px;
+    color: #ddd;
+}
+
+/* Hover effect for dropdown items */
+nav ul li ul li a:hover {
+    background-color: #444;
+}
+
+
+/* menu position options */
+#header_area.left_menu .col-md-3 {
+    order: 2
+}
+#header_area.left_menu .col-md-9 {
+    order: 1
+}
+#header_area.left_menu .col-md-9 .ul {
+    text-align: left;
+}
+#header_area.center_menu .col-md-3 {
+  width: 20%;
+  text-align: center;
+}
+#header_area.center_menu .col-md-9 {
+    width: 100%;
+}
+#header_area.left_menu .col-md-9 .ul {
+    text-align: center;
+}
+
+#footer_section {
+    background-color: #333 !important; /* Dark background color for the footer */
+    color: #fff; /* White text color */
+    padding: 20px 0; /* Add padding for spacing */
+    text-align: center; /* Center-align the content */
+}
+
+#footer_section p {
+    font-size: 16px; /* Set the font size */
+    margin: 0; /* Remove margin for a clean look */
+    font-family: 'Arial', sans-serif; /* Set a font family */
+}
+
+.blog_area{
+    padding: 20px 0px ;
+}
+#body_area .blog_area .post-title a{
+    color: #262626;
+    text-decoration: none;
+    transition: color 1s ease;
+}
+#body_area .blog_area .post-title a:hover{
+    color: var(--primary);
+}
+
+.read_more {
+    display: inline-block;
+    background-color: var(--primary); /* Button background color */
+    color: white; /* Text color */
+    padding: 10px 20px; /* Padding around the button */
+    font-size: 16px; /* Font size */
+    text-decoration: none; /* Remove underline */
+    border-radius: 5px; /* Rounded corners */
+    transition: background-color 0.3s, transform 0.3s; /* Smooth transition on hover */
+}
+
+.read_more:hover {
+    background-color: rgb(105, 57, 48); /* Darker background on hover */
+    transform: translateY(-3px); /* Slight upward movement on hover */
+}
+
+/* Pagination Container */
+.wp_pagenav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+/* Pagination Links */
+.wp_pagenav a,
+.wp_pagenav span {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 0 5px;
+    background-color: var(--primary); /* var(--primary) color for background */
+    color: white; /* White text */
+    text-decoration: none;
+    border-radius: 5px; /* Rounded corners */
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth hover effect */
+}
+
+/* Hover Effect for Pagination Links */
+.wp_pagenav a:hover,
+.wp_pagenav span.current {
+    background-color: darkred; /* Darker var(--primary) color on hover */
+    cursor: pointer;
+    transform: translateY(-3px); /* Slight upward movement on hover */
+}
+
+/* Previous & Next Button Styling */
+.wp_pagenav .prev,
+.wp_pagenav .next {
+    background-color: var(--primary);
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.wp_pagenav .prev:hover,
+.wp_pagenav .next:hover {
+    background-color: darkred;
+}
+
+/* Page Number Styling */
+.wp_pagenav .pages {
+    font-size: 14px;
+    margin: 10px 0;
+    color: var(--primary); /* var(--primary) color for page number text */
+}
+
+.wp_pagenav .pages span {
+    font-weight: bold;
+}
+
+/* Styling for Active Pagination Link */
+.wp_pagenav .current {
+    background-color: darkred; /* Dark var(--primary) for the current page */
+    cursor: default;
+}
+
+#archive_title{
+    background: var(--primary);
+    color: white;
+    padding: 20px 0px !important;
+}
+
+.error {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center !important;
+    justify-content: center !important;
+    min-height: 75vh;
+}
+
+#service_area{
+    padding: 45px 0px;
+}
+#service_area .service-content {
+    background-color: #ddd;
+    box-shadow: 0 0 10px #ddd;
+    padding: 15px;
+    border-radius: 15px;
+    margin: 10px;
+}
+
+/* Define the .btn class */
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    background-color: var(--primary, tomato); /* Primary color set to tomato */
+    color: white; /* Text color */
+    border: 2px solid transparent; /* Invisible border to create spacing around the button */
+}
+
+.btn:hover {
+    background-color: darkorange; /* Darker shade on hover */
+    border-color: tomato; /* Border color changes on hover */
+}
+
+.btn:focus {
+    outline: none; /* Removes focus outline */
+    box-shadow: 0 0 5px tomato; /* Adds a glowing effect around the button */
+}
