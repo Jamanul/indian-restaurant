@@ -1,14 +1,444 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="<?php language_attributes(); ?>" class="no-js">
 
 <head>
-    <meta charset="UTF-8">
+    <meta charset="<?php bloginfo("charset") ?>">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Indian restaurant</title>
+    <?php wp_head() ?>
 </head>
 
-<body>
+<body <?php body_class(); ?>>
+    <header>
+        <nav class="nav-container flex">
+            <div class="nav-first items-center flex vector-cotainer">
+                <h2 class="logo jomhuria-regular"><a href="/index.html">Logo</a></h2>
+                <ul class="nav-center text-lg flex">
+                    <li><a href="/aboutUs.html">About Us</a></li>
+                    <li><a href="/menu.html">Menu</a></li>
+                    <li><a href="">Blog</a></li>
+                    <li><a href="/contactUs.html">Contact</a></li>
+                </ul>
+                <div class="nav-right flex">
+                    <button class="nav-button">
+                        <img src="<?php echo get_template_directory_uri(); ?>./icons/bar-icon.svg" alt="menu">
+                    </button>
+                    <button class="responsive-nav-button items-center flex-column justify-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="11" height="2" viewBox="0 0 11 2" fill="none">
+                            <path d="M0.631592 1H10.2358" stroke="black" stroke-width="1.20053"
+                                stroke-linecap="round" />
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="9" height="2" viewBox="0 0 9 2" fill="none">
+                            <path d="M0.832031 0.601562H8.03521" stroke="black" stroke-width="1.20053"
+                                stroke-linecap="round" />
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="7" height="2" viewBox="0 0 7 2" fill="none">
+                            <path d="M1.03271 1.20312H5.83484" stroke="black" stroke-width="1.20053"
+                                stroke-linecap="round" />
+                        </svg>
+                    </button>
+                    <button class="reserve-button flex items-center justify-center text-center primary-bg">
+                        Reserve Table
+                    </button>
+                </div>
+            </div>
+        </nav>
+        <div class="nav-title primary-bg text-center">
+            <p class="vector-cotainer nav-text">
+                Join My Restaurant Rewards, win Our Special
+                <span class="nav-title-span">Guest Token!</span>
+            </p>
+        </div>
+    </header>
+    <!-- cover section -->
+    <section class="cover-section">
+        <div class="vector-cotainer relative">
+            <div class="flex items-center cover-text">
+                <p class="text-lg playfair-display">A Indian Cuisine Restaurant</p>
+                <img src="<?php echo get_template_directory_uri(); ?>./icons/yellow-svg.svg" alt="line">
+            </div>
+            <div class="flex-column flex cover-bottom">
+                <div class="flex flex-column cover-center">
+                    <h1 class="cover-title playfair-display">Healthy And Fresh <span class="block-span">Food In One
+                            Place</span></h1>
+                    <p class="text-lg cover-dsc">In publishing and graphic design, Lorem ipsum is a placeholder <span
+                            class="cover-span">text commonly used to demonstrate the visual form of a document.</span>
+                    </p>
+                </div>
+                <div class="flex items-center button-container">
+                    <button class="hero-button text-lg primary-bg text-center">See Menu</button>
+                    <button class="flex search-button text-lg primary-bg text-center"><img class="relative z-100"
+                            src="<?php echo get_template_directory_uri(); ?>./icons/Search.svg" alt="search"><span
+                            class="relative z-100"> Search</span>
+                    </button>
+                </div>
+                <!-- <div class="button-container">
+            <button class="hover-button">
+              Hover Me
+              <img src="<?php echo get_template_directory_uri(); ?>./icons/wheel.svg" alt="wheel" class="wheel">
+            </button>
+          </div> -->
+            </div>
+            <img src="<?php echo get_template_directory_uri(); ?>./icons/white-mouse.svg" alt="mouse"
+                class="absolute cover-svg">
+        </div>
 
+    </section>
+    <!-- hero section -->
+    <section class="hero-section ">
+        <div class="hero vector-cotainer">
+            <!-- title -->
+            <div class="relative">
+                <h1 class="playfair-display hero-title font-bold">
+                    Healthy And Fresh Food <span class="block-span"> In One Place</span>
+                </h1>
+                <img class="hero-pizza absolute" src="<?php echo get_template_directory_uri(); ?>./images/pizza.png"
+                    alt="pizza" />
+            </div>
+            <div class="hero-div flex">
+                <!-- hero left -->
+                <div class="image-container">
+                    <img class="hero-div-img" src="<?php echo get_template_directory_uri(); ?>./images/image 19.png"
+                        alt="Restaurant" />
+                </div>
+                <!--  hero-right-->
+                <div class="hero-inner-div">
+                    <p class="hero-div-title satisfy-regular">
+                        A Indian Cuisine Restaurant
+                    </p>
+                    <p class="hero-div-description">
+                        In publishing and graphic design, Lorem ipsum is a place holder
+                        text commonly used to demonstrate the visual form of a document.
+                    </p>
+                    <div class="button-container flex">
+                        <button class="hero-button text-lg primary-bg text-center">See Menu</button>
+                        <button class="hero-button-two text-lg text-center">Book a Table</button>
+                    </div>
+                    <div class="hero-last flex">
+                        <div class="hero-last-div flex items-center">
+                            <h2 class="lora-font hero-last-text">4.5K+</h2>
+                            <p class="hero-last-review">
+                                Reviews <span class="block-span"> of Customer</span>
+                            </p>
+                        </div>
+                        <div class="hero-last-div-two flex items-center">
+                            <img src="<?php echo get_template_directory_uri(); ?>./images/Ellipse 11.png" alt="Person"
+                                class="responsive-width" />
+                            <p class="hero-last-div-two-text">demonstrate the visual <span> form of a document.</span>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="hero-pizza">
+                        <img src="<?php echo get_template_directory_uri(); ?>./icons/mouse-icon.svg" alt="mouse">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- best food -->
+    <section class="best-food flex flex-column items-center justify-center vector-cotainer">
+        <div class="best-food-section flex">
+            <!-- best food left section -->
+            <div>
+                <p class="hero-div-title show-class satisfy-regular">
+                    A Indian Cuisine Restaurant
+                </p>
+                <h2 class="best-food-title playfair-display font-bold">
+                    We are the best in this food town for a decade!
+                </h2>
+
+                <img class="best-food-img" src="<?php echo get_template_directory_uri(); ?>./images/image 38.png"
+                    alt="chicken" />
+
+                <p class="best-food-secondary-title font-bold playfair-display">Spicy Club</p>
+                <p class="best-food-description text-lg">
+                    In publishing and graphic design, Lorem ipsum is a placeholder text
+                    commonly used Lorem ipsum text only.
+                </p>
+            </div>
+            <!-- best food right section -->
+            <div>
+                <img class="best-food-img" src="<?php echo get_template_directory_uri(); ?>./images/image 39.png"
+                    alt="curry" />
+                <p class="best-food-secondary-title font-bold playfair-display">Spicy Club</p>
+                <p class="best-food-description">
+                    In publishing and graphic design, Lorem ipsum is a placeholder text
+                    commonly used Lorem ipsum text only.
+                </p>
+            </div>
+        </div>
+        <button class="about-us text-center text-lg primary-bg">About Us</button>
+    </section>
+    <section class="daily-offer vector-cotainer">
+        <!-- top buttons -->
+        <div class=" justify-between items-center flex">
+            <p class="daily-offer-title playfair-display text-center font-bold">Our Daily Offer</p>
+            <div>
+                <button class="daily-offer-button">
+                    <img src="<?php echo get_template_directory_uri(); ?>./icons/left-arrow.svg" alt="left">
+                </button>
+                <button class="daily-offer-button">
+                    <img src="<?php echo get_template_directory_uri(); ?>./icons/right-arrow.svg" alt="right">
+                </button>
+            </div>
+        </div>
+        <!-- main section -->
+        <div class="daily-offer-div flex items-center">
+            <!-- left side menu image -->
+            <div class="daily-offer-image-container">
+                <div class="daily-offer-image-div flex flex-column justify-between">
+                    <div>
+                        <h2 class="daily-offer-first-title text-center playfair-display">Lunch Time</h2>
+                        <h3 class="daily-offer-second-title">30% OFF</h3>
+                    </div>
+                    <div>
+                        <button class="reservation-button primary-bg text-lg text-center">Make Reservation</button>
+                    </div>
+                </div>
+                <img class="daily-offer-svg" src="<?php echo get_template_directory_uri(); ?>./icons/arrow-svg.svg"
+                    alt="arrow">
+            </div>
+            <!-- right side menu -->
+            <div class="menu flex flex-column justify-between">
+                <div class="menu-section flex">
+                    <div><img src="<?php echo get_template_directory_uri(); ?>./images/image 21.png" alt="chicken"
+                            class="menu-section-img" /></div>
+                    <div class="menu-price flex flex-column">
+                        <div class="menu-left flex justify-between">
+                            <p class="menu-title playfair-display font-bold">Spicy Club</p>
+                            <p class="menu-title font-bold">₹ 299</p>
+                        </div>
+                        <p class="menu-description">
+                            In publishing and graphic design, Lorem <br />
+                            ipsum is a placeholder text commonly used.
+                        </p>
+                    </div>
+                </div>
+                <div class="menu-section flex">
+                    <div>
+                        <img src="<?php echo get_template_directory_uri(); ?>./images/image 22.png" alt="pizza"
+                            class="menu-section-img" />
+                    </div>
+                    <div class="menu-price flex flex-column">
+                        <div class="menu-left flex justify-between">
+                            <p class="menu-title playfair-display font-bold">Almond Baked Brie</p>
+                            <p class="menu-title font-bold">₹ 299</p>
+                        </div>
+                        <p class="menu-description">
+                            In publishing and graphic design, Lorem <br />
+                            ipsum is a placeholder text commonly used.
+                        </p>
+                    </div>
+                </div>
+                <div class="menu-section flex">
+                    <div>
+                        <img src="<?php echo get_template_directory_uri(); ?>./images/image 23.png" alt="pizza"
+                            class="menu-section-img" />
+                    </div>
+                    <div class="menu-price flex flex-column">
+                        <div class="menu-left flex justify-between">
+                            <p class="menu-title playfair-display font-bold">Tuescan Flatbread</p>
+                            <p class="menu-title font-bold">₹ 299</p>
+                        </div>
+                        <p class="menu-description">
+                            In publishing and graphic design, Lorem <br />
+                            ipsum is a placeholder text commonly used.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Reservation -->
+    <section class="online-reservation">
+        <h1 class="reservation-title vector-cotainer">Online Reservation</h1>
+        <div class="vector-cotainer">
+            <!-- input fields -->
+            <div class="reservation-input-container">
+                <div class="input-div">
+                    <input type="text" placeholder="Your name" />
+                    <img src="<?php echo get_template_directory_uri(); ?>./icons/person.svg" alt="person"
+                        class="input-div-icons">
+                </div>
+                <div class="input-div">
+                    <input type="number" placeholder="Phone Number" />
+                    <img src="<?php echo get_template_directory_uri(); ?>./icons/phone.svg" alt="phone"
+                        class="input-div-icons">
+                </div>
+                <div class="input-div">
+                    <input type="email" placeholder="Email Address" />
+                    <img src="<?php echo get_template_directory_uri(); ?>./icons/email.svg" alt="email"
+                        class="input-div-icons">
+                </div>
+                <div class="input-div">
+                    <input type="text" placeholder="2 Person" />
+                    <img src="<?php echo get_template_directory_uri(); ?>./icons/down-arrow.svg" alt="down-arrow"
+                        class="input-div-icons">
+                </div>
+                <div class="input-div">
+                    <input type="date" placeholder="" />
+                    <img src="<?php echo get_template_directory_uri(); ?>./icons/calender.svg" alt="calender"
+                        class="input-div-icons">
+                </div>
+                <div class="input-div">
+                    <input type="text" placeholder="07:00 PM - 10:00 PM" />
+                    <img src="<?php echo get_template_directory_uri(); ?>./icons/clock.svg" alt="clock"
+                        class="input-div-icons">
+                </div>
+            </div>
+            <div class="submit-button-container flex items-center justify-center">
+                <button class="submit-button primary-bg text-lg">Submit Your Reservation</button>
+            </div>
+        </div>
+    </section>
+    <!-- contact info -->
+    <section class="contact-container vector-cotainer">
+        <div class="contact-info flex justify-between">
+            <div class="contact-info-section flex">
+                <div>
+                    <div class="contact-svg">
+                        <img src="<?php echo get_template_directory_uri(); ?>./icons/business.svg" alt="clock"
+                            class="contact-svg-img">
+                    </div>
+                </div>
+                <div>
+                    <h2 class="contact-title font-bold playfair-display">Business Hours</h2>
+                    <p class="contact-time">
+                        Sat - Sun: <span class="cotact-time-number">10 AM - 11 PM</span>
+                    </p>
+                    <p class="contact-time-two">
+                        Mon - Fri: <span class="cotact-time-number">10 AM - 8 PM</span>
+                    </p>
+                </div>
+            </div>
+            <div class="contact-info-section flex">
+                <div>
+                    <div class="contact-svg">
+                        <img src="<?php echo get_template_directory_uri(); ?>./icons/location.svg" alt="home"
+                            class="contact-svg-img">
+                    </div>
+                </div>
+                <div>
+                    <h2 class="contact-title playfair-display font-bold">Locations</h2>
+                    <div class="location-div-container">
+                        <p class="contact-time">Sat - Sun:</p>
+                        <p class="location-text">
+                            Shere hydrabad <br />
+                            Nagar, Dilli, India
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="contact-info-section flex">
+                <div>
+                    <div class="contact-svg">
+                        <img src="<?php echo get_template_directory_uri(); ?>./icons/contact.svg" alt="phone"
+                            class="contact-svg-img">
+                    </div>
+                </div>
+                <div>
+                    <h2 class="contact-title font-bold playfair-display">Contact</h2>
+                    <p class="contact-time">
+                        Email:
+                        <span class="cotact-time-number">Restaurant@gmail.com</span>
+                    </p>
+                    <p class="contact-time-two">
+                        Phone <span class="cotact-time-number">+8673453463523</span>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="contact-img-container">
+            <img class="contact-img" src="<?php echo get_template_directory_uri(); ?>./images/image 40.png" alt="map" />
+        </div>
+    </section>
+    <!-- Newsletter section -->
+    <section class="newsletter flex vector-cotainer">
+        <!--newsletter left -->
+        <div class="newsletter-top">
+            <p class="newsletter-title-responsive">Newsletter</p>
+            <p class="hero-div-title satisfy-regular newsletter-first-div">
+                A Indian Cuisine Restaurant
+            </p>
+            <h1 class="newsletter-title playfair-display font-bold">
+                Subscribe Newsletter & get Latest Offer!
+            </h1>
+            <p class="newsletter-description text-lg">
+                In publishing and graphic design, Lorem ipsum is a placeholder text
+                commonly used to demonstrate the visual form of a document.
+            </p>
+            <div class="newsletter-input-section flex items-center">
+                <input class="newsletter-input" type="text" placeholder="Write your Email" />
+                <button type="submit" class="newsletter-button text-center primary-bg text-lg">Subscribe</button>
+            </div>
+        </div>
+        <!-- newsletter right -->
+        <div class="img-border">
+            <img src="<?php echo get_template_directory_uri(); ?>./images/image 19.png" alt="Restaurant"
+                class="img-border-img" />
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="footer-container flex justify-between vector-cotainer">
+            <div class="footer-left">
+                <h2 class="footer-logo">Logo</h2>
+                <p class="footer-description">
+                    In publishing and graphic design, Lorem <br />
+                    ipsum is a placeholder text commonly
+                </p>
+                <ul class="footer-bottom">
+                    <li>Home</li>
+                    <li>Menu</li>
+                    <li>Offer</li>
+                    <li>Services</li>
+                    <li>Help</li>
+                    <li>Privacy</li>
+                </ul>
+            </div>
+            <div class="logo-container-footer-conatiner">
+                <p class="get-app">Get the app</p>
+                <div class="logo-container-footer">
+                    <img src="<?php echo get_template_directory_uri(); ?>./icons/app-store.svg" alt="app-store">
+                </div>
+                <div class="logo-container-footer">
+                    <div class="svg-holder">
+                        <div>
+                            <img src="<?php echo get_template_directory_uri(); ?>./icons/play-button.svg"
+                                alt="play-button">
+                        </div>
+                        <div class="svg-flex flex flex-column">
+                            <img style="width: fit-content;"
+                                src="<?php echo get_template_directory_uri(); ?>./icons/store.svg" alt="store">
+                            <img src="<?php echo get_template_directory_uri(); ?>./icons/google-text.svg" alt="store">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="disclaimer-footer vector-cotainer flex justify-between items-center">
+            <p class="disclaimer">© 2077 Untitled UI. All rights reserved.</p>
+            <div class="disclaimer-icon">
+                <img src="<?php echo get_template_directory_uri(); ?>./icons/twitter.svg" alt="twitter">
+                <img src="<?php echo get_template_directory_uri(); ?>./icons/linkedin.svg" alt="linkedin">
+                <img src="<?php echo get_template_directory_uri(); ?>./icons/facebook.svg" alt="facebook">
+                <img src="<?php echo get_template_directory_uri(); ?>./icons/githu.svg" alt="github">
+                <img src="<?php echo get_template_directory_uri(); ?>./icons/v.svg" alt="v">
+                <img src="<?php echo get_template_directory_uri(); ?>./icons/balls.svg" alt="balls">
+            </div>
+        </div>
+    </footer>
+    <script>
+        const btn = document.querySelector('.search-button'); // Match the correct class name
+
+        btn.addEventListener('mousemove', function (e) {
+            const rect = btn.getBoundingClientRect();
+            const x = e.clientX - rect.left;
+            const y = e.clientY - rect.top;
+            btn.style.setProperty('--x', x + 'px');
+            btn.style.setProperty('--y', y + 'px');
+        });
+    </script>
+    <?php wp_footer(); ?>
 </body>
 
 </html>
