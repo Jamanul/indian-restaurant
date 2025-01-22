@@ -51,8 +51,7 @@
         <div class="hero-div flex">
             <!-- hero left -->
             <div class="image-container">
-                <img class="hero-div-img" src="<?php echo get_template_directory_uri(); ?>./images/image 19.png"
-                    alt="Restaurant" />
+                <img class="hero-div-img" src="<?php echo get_theme_mod("ir_hero_img"); ?>" alt="Restaurant" />
             </div>
             <!--  hero-right-->
             <div class="hero-inner-div">
