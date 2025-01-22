@@ -4,7 +4,13 @@
 
 <?php get_header(); ?>
 <!-- cover section -->
-<section class="cover-section">
+<section style="background: linear-gradient(
+    88deg,
+    rgba(0, 0, 0, 0.66) 16.03%,
+    rgba(0, 0, 0, 0.51) 41.34%,
+    rgba(0, 0, 0, 0) 56.85%
+    ),
+    url('<?php echo get_theme_mod("ir_cover_area_img"); ?>') lightgray 50% / cover no-repeat;" class="cover-section">
     <div class="vector-cotainer relative">
         <div class="flex items-center cover-text">
             <p class="text-lg playfair-display">A Indian Cuisine Restaurant</p>

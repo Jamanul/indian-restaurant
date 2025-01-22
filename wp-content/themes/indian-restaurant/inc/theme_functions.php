@@ -18,6 +18,22 @@ function ir_customize_register($wp_customize)
         'setting' => 'ir_hero_img',
         'section' => 'ir_hero_area',
     )));
+    $wp_customize->add_section('ir_cover_area', array(
+        'title' => __('Cover Area', 'sakib'),
+        'description' => __('Change the cover background image here.', 'sakib'),
+    ));
+
+    $wp_customize->add_setting('ir_cover_area_img', array(
+        'default' => get_template_directory_uri() . '/images/cover-photo.png',
+        'sanitize_callback' => 'esc_url_raw',
+    ));
+
+    $wp_customize->add_control(new WP_Customize_Image_Control($wp_customize, 'ir_cover_area_img', array(
+        'label' => __('Cover Background Image Upload', 'sakib'),
+        'description' => __('Upload the cover image here.', 'sakib'),
+        'settings' => 'ir_cover_area_img',
+        'section' => 'ir_cover_area',
+    )));
 }
 
 add_action('customize_register', 'ir_customize_register');

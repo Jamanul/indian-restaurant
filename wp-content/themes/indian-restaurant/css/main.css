@@ -135,13 +135,6 @@ a {
 }
 /* cover section */
 .cover-section {
-  background: linear-gradient(
-      88deg,
-      rgba(0, 0, 0, 0.66) 16.03%,
-      rgba(0, 0, 0, 0.51) 41.34%,
-      rgba(0, 0, 0, 0) 56.85%
-    ),
-    url("../images/cover-photo.png") lightgray 50% / cover no-repeat;
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
