@@ -4,9 +4,9 @@
   --font-size-default: 16px;
   --font-family-default: "Cabin", sans-serif;
 }
-img {
+/* img {
   width: inherit !important;
-}
+} */
 button {
   cursor: pointer;
 }
@@ -203,7 +203,9 @@ a {
 .hero-section {
   background: #fdfbf7;
 }
-
+.image-container {
+  width: 100%;
+}
 .hero {
   padding: 64px 0px 80px 0px;
 }
@@ -226,6 +228,7 @@ a {
 
 .hero-div-img {
   border-radius: 10px;
+  width: 100% !important;
 }
 
 .hero-div-title {

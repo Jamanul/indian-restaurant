@@ -5,6 +5,14 @@ function ir_file_calling()
     wp_enqueue_style("ir_style", get_stylesheet_uri());
     wp_register_style("ir_main_style", get_template_directory_uri() . "/css/main.css", [], "1.0.0", "all");
     wp_enqueue_style("ir_main_style");
+    wp_register_style("ir_about_style", get_template_directory_uri() . "/css/about.css", [], "1.0.0", "all");
+    wp_enqueue_style("ir_about_style");
+    wp_register_style("ir_contact_style", get_template_directory_uri() . "/css/contact.css", [], "1.0.0", "all");
+    wp_enqueue_style("ir_contact_style");
+    wp_register_style("ir_reservation_style", get_template_directory_uri() . "/css/reservation.css", [], "1.0.0", "all");
+    wp_enqueue_style("ir_reservation_style");
+    wp_register_style("ir_menu_style", get_template_directory_uri() . "/css/menu.css", [], "1.0.0", "all");
+    wp_enqueue_style("ir_menu_style");
     wp_register_style("ir_bootstrap", get_template_directory_uri() . "/css/bootstrap.css", [], "5.2.2", "all");
     wp_enqueue_style("ir_bootstrap");
     wp_enqueue_script("jquery");

@@ -1,0 +1,247 @@
+/* menu */
+
+.menu-section-seconadary {
+  margin: 80px auto;
+}
+
+.menu-title-secondary {
+  text-align: center;
+  font-family: "Playfair Display";
+  font-size: 56px;
+  font-weight: 700;
+  line-height: 60px;
+  margin-bottom: 32px;
+}
+
+.menu-description-secondary {
+  color: #6c6c6c;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 28px;
+  margin-bottom: 64px;
+}
+
+.button-container {
+  margin-bottom: 40px;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  place-items: center;
+  gap: 16px;
+}
+.inactive-button {
+  padding: 16px 24px;
+  color: #000;
+  text-align: center;
+  font-family: Cabin;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+  border-radius: 32px;
+  border: 2px solid #fbc04e;
+  background: none;
+}
+
+.active-button {
+  color: #000;
+  text-align: center;
+  font-family: Cabin;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+  border-radius: 32px;
+  background: #fbc04e;
+  padding: 16px 24px;
+}
+
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  row-gap: 64px;
+  max-width: 1240px;
+  margin: 0px auto;
+}
+
+.card-img {
+  margin-bottom: 24px;
+  border-radius: 10px;
+}
+
+.card-title {
+  color: #353432;
+  font-family: "Playfair Display";
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  margin-bottom: 16px;
+}
+
+.card-description {
+  color: #6c6c6c;
+  font-family: Cabin;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28px;
+  margin-bottom: 16px;
+}
+
+.price-container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 16px;
+  align-items: center;
+  gap: 8px;
+  padding: 0px 8px;
+}
+
+.learn-more {
+  color: #353432;
+  font-family: Cabin;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-decoration-line: underline;
+}
+
+.menu-price {
+  color: #353432;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.see-more {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px;
+}
+.footer {
+  margin-top: 0px;
+}
+.newsletter {
+  margin-bottom: 0px;
+}
+@media only screen and (max-width: 600px) {
+  .card-container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .button-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .responsive-col-span {
+    grid-column: span 2;
+  }
+  .img-border > img {
+    width: 100%;
+  }
+  .card-container > div > svg {
+    width: 90vw;
+  }
+  .card-container > div > img {
+    width: 90vw;
+  }
+  .card-container > div {
+    width: 90vw;
+  }
+  .menu-title {
+    font-size: 30px;
+  }
+  .menu-description {
+    font-size: 14px;
+    line-height: normal;
+  }
+}
+@media only screen and (min-width: 601px) and (max-width: 767px) {
+  .card-container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .button-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .responsive-col-span {
+    grid-column: span 2;
+  }
+  .img-border > img {
+    width: 100%;
+  }
+  .card-container > div > svg {
+    width: 90vw;
+  }
+  .card-container > div > img {
+    width: 90vw;
+  }
+  .card-container > div {
+    width: 90vw;
+  }
+  .menu-title {
+    font-size: 30px;
+  }
+  .menu-description {
+    font-size: 14px;
+    line-height: normal;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .card-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .img-border > img {
+    width: 100%;
+  }
+  .card-container > div > svg {
+    width: 43.5vw;
+  }
+  .card-container > div > img {
+    width: 43.5vw;
+  }
+  .card-container > div {
+    width: 43.5vw;
+  }
+  .menu-title {
+    font-size: 30px;
+  }
+  .menu-description {
+    font-size: 14px;
+    line-height: normal;
+  }
+  .block-span {
+    display: inline-block;
+  }
+}
+@media only screen and (min-width: 991px) and (max-width: 1200px) {
+  .card-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .img-border > img {
+    width: 100%;
+  }
+  .card-container > div > svg {
+    width: 43.5vw;
+  }
+  .card-container > div > img {
+    width: 43.5vw;
+  }
+  .card-container > div {
+    width: 43.5vw;
+  }
+  .menu-title {
+    font-size: 30px;
+  }
+  .menu-description {
+    font-size: 14px;
+    line-height: normal;
+  }
+  .block-span {
+    display: block;
+  }
+}
