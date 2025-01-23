@@ -47,15 +47,15 @@
     </div>
 </footer>
 <script>
-    const btn = document.querySelector('.search-button'); // Match the correct class name
+    // const btn = document.querySelector('.search-button'); // Match the correct class name
 
-    btn.addEventListener('mousemove', function (e) {
-        const rect = btn.getBoundingClientRect();
-        const x = e.clientX - rect.left;
-        const y = e.clientY - rect.top;
-        btn.style.setProperty('--x', x + 'px');
-        btn.style.setProperty('--y', y + 'px');
-    });
+    // btn.addEventListener('mousemove', function (e) {
+    //     const rect = btn.getBoundingClientRect();
+    //     const x = e.clientX - rect.left;
+    //     const y = e.clientY - rect.top;
+    //     btn.style.setProperty('--x', x + 'px');
+    //     btn.style.setProperty('--y', y + 'px');
+    // });
 </script>
 <?php wp_footer(); ?>
 </body>

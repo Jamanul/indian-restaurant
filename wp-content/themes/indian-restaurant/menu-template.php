@@ -22,127 +22,61 @@ Template Name: Menu Custom Template
         </div>
     </div>
     <!-- card section -->
-    <div class="card-container vector-cotainer">
-        <div class="">
-            <img class="card-img" src="<?php echo get_template_directory_uri(); ?>./images/grid1.png" alt="food">
-            <h2 class="card-title">Crispy Chicken Brests</h2>
-            <p class="card-description">In publishing and graphic design, Lorem ipsum is a placeho. Lorem ipsum is a
-                placeho.</p>
-            <svg xmlns="http://www.w3.org/2000/svg" width="399" height="2" viewBox="0 0 399 2" fill="none">
-                <path d="M1 1H398" stroke="#6C6C6C" stroke-width="0.5" stroke-linecap="round" />
-            </svg>
-            <div class="price-container">
-                <p class="learn-more">Learn more</p>
-                <p class="menu-price">$14.65</p>
-            </div>
-        </div>
-        <div>
-            <img class="card-img" src="<?php echo get_template_directory_uri(); ?>./images/grid2.png" alt="food">
-            <h2 class="card-title">Crispy Beef With Bone</h2>
-            <p class="card-description">In publishing and graphic design, Lorem ipsum is a placeho. Lorem ipsum is a
-                placeho.</p>
-            <svg xmlns="http://www.w3.org/2000/svg" width="399" height="2" viewBox="0 0 399 2" fill="none">
-                <path d="M1 1H398" stroke="#6C6C6C" stroke-width="0.5" stroke-linecap="round" />
-            </svg>
-            <div class="price-container">
-                <p class="learn-more">Learn more</p>
-                <p class="menu-price">$14.65</p>
-            </div>
-        </div>
-        <div>
-            <img class="card-img" src="<?php echo get_template_directory_uri(); ?>./images/grid3.png" alt="food">
-            <h2 class="card-title">Crispy Chicken Brests</h2>
-            <p class="card-description">In publishing and graphic design, Lorem ipsum is a placeho. Lorem ipsum is a
-                placeho.</p>
-            <svg xmlns="http://www.w3.org/2000/svg" width="399" height="2" viewBox="0 0 399 2" fill="none">
-                <path d="M1 1H398" stroke="#6C6C6C" stroke-width="0.5" stroke-linecap="round" />
-            </svg>
-            <div class="price-container">
-                <p class="learn-more">Learn more</p>
-                <p class="menu-price">$14.65</p>
-            </div>
-        </div>
-        <div>
-            <img class="card-img" src="<?php echo get_template_directory_uri(); ?>./images/grid3.png" alt="food">
-            <h2 class="card-title">Crispy Chicken Brests</h2>
-            <p class="card-description">In publishing and graphic design, Lorem ipsum is a placeho. Lorem ipsum is a
-                placeho.</p>
-            <svg xmlns="http://www.w3.org/2000/svg" width="399" height="2" viewBox="0 0 399 2" fill="none">
-                <path d="M1 1H398" stroke="#6C6C6C" stroke-width="0.5" stroke-linecap="round" />
-            </svg>
-            <div class="price-container">
-                <p class="learn-more">Learn more</p>
-                <p class="menu-price">$14.65</p>
-            </div>
-        </div>
-        <div>
-            <img class="card-img" src="<?php echo get_template_directory_uri(); ?>./images/grid1.png" alt="food">
-            <h2 class="card-title">Crispy Chicken Brests</h2>
-            <p class="card-description">In publishing and graphic design, Lorem ipsum is a placeho. Lorem ipsum is a
-                placeho.</p>
-            <svg xmlns="http://www.w3.org/2000/svg" width="399" height="2" viewBox="0 0 399 2" fill="none">
-                <path d="M1 1H398" stroke="#6C6C6C" stroke-width="0.5" stroke-linecap="round" />
-            </svg>
-            <div class="price-container">
-                <p class="learn-more">Learn more</p>
-                <p class="menu-price">$14.65</p>
-            </div>
-        </div>
-        <div>
-            <img class="card-img" src="<?php echo get_template_directory_uri(); ?>./images/grid2.png" alt="food">
-            <h2 class="card-title">Crispy Beef With Bone</h2>
-            <p class="card-description">In publishing and graphic design, Lorem ipsum is a placeho. Lorem ipsum is a
-                placeho.</p>
-            <svg xmlns="http://www.w3.org/2000/svg" width="399" height="2" viewBox="0 0 399 2" fill="none">
-                <path d="M1 1H398" stroke="#6C6C6C" stroke-width="0.5" stroke-linecap="round" />
-            </svg>
-            <div class="price-container">
-                <p class="learn-more">Learn more</p>
-                <p class="menu-price">$14.65</p>
-            </div>
-        </div>
-        <div>
-            <img class="card-img" src="<?php echo get_template_directory_uri(); ?>./images/grid1.png" alt="food">
-            <h2 class="card-title">Crispy Chicken Brests</h2>
-            <p class="card-description">In publishing and graphic design, Lorem ipsum is a placeho. Lorem ipsum is a
-                placeho.</p>
-            <svg xmlns="http://www.w3.org/2000/svg" width="399" height="2" viewBox="0 0 399 2" fill="none">
-                <path d="M1 1H398" stroke="#6C6C6C" stroke-width="0.5" stroke-linecap="round" />
-            </svg>
-            <div class="price-container">
-                <p class="learn-more">Learn more</p>
-                <p class="menu-price">$14.65</p>
-            </div>
-        </div>
-        <div>
-            <img class="card-img" src="<?php echo get_template_directory_uri(); ?>./images/grid3.png" alt="food">
-            <h2 class="card-title">Crispy Chicken Brests</h2>
-            <p class="card-description">In publishing and graphic design, Lorem ipsum is a placeho. Lorem ipsum is a
-                placeho.</p>
-            <svg xmlns="http://www.w3.org/2000/svg" width="399" height="2" viewBox="0 0 399 2" fill="none">
-                <path d="M1 1H398" stroke="#6C6C6C" stroke-width="0.5" stroke-linecap="round" />
-            </svg>
-            <div class="price-container">
-                <p class="learn-more">Learn more</p>
-                <p class="menu-price">$14.65</p>
-            </div>
-        </div>
-        <div>
-            <img class="card-img" src="<?php echo get_template_directory_uri(); ?>./images/grid2.png" alt="food">
-            <h2 class="card-title">Crispy Beef With Bone</h2>
-            <p class="card-description">In publishing and graphic design, Lorem ipsum is a placeho. Lorem ipsum is a
-                placeho.</p>
-            <svg xmlns="http://www.w3.org/2000/svg" width="399" height="2" viewBox="0 0 399 2" fill="none">
-                <path d="M1 1H398" stroke="#6C6C6C" stroke-width="0.5" stroke-linecap="round" />
-            </svg>
-            <div class="price-container">
-                <p class="learn-more">Learn more</p>
-                <p class="menu-price">$14.65</p>
-            </div>
-        </div>
+</section>
+<section class="vector-cotainer">
+    <div class="card-container">
+        <?php
+        $paged = get_query_var('paged') ? get_query_var('paged') : 1;
+        $args = array(
+            'post_type' => 'ir_foods',
+            'post_status' => 'publish',
+            'posts_per_page' => 6,
+            'order' => 'ASC',
+            'paged' => $paged,
+        );
 
+        $ir_foods_query = new WP_Query($args);
+
+        if ($ir_foods_query->have_posts()):
+            while ($ir_foods_query->have_posts()):
+                $ir_foods_query->the_post(); ?>
+                <div class="col-md-4">
+                    <div class="food-item">
+                        <?php
+                        if (has_post_thumbnail()) {
+                            echo get_the_post_thumbnail(get_the_ID(), 'ir_foods', array('class' => 'img-responsive'));
+                        }
+                        ?>
+                        <h2 class="card-title"><?php echo esc_html(get_the_title()); ?></h2>
+                        <p class="card-description"><?php echo esc_html(get_the_excerpt()); ?></p>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="399" height="2" viewBox="0 0 399 2" fill="none">
+                            <path d="M1 1H398" stroke="#6C6C6C" stroke-width="0.5" stroke-linecap="round" />
+                        </svg>
+                        <div class="price-container">
+                            <p class="learn-more">Learn more</p>
+                            <p class="menu-price">
+                                <?php
+                                $price = get_post_meta(get_the_ID(), 'ir_foods_price', true);
+                                if ($price) {
+                                    echo esc_html($price);
+                                }
+                                ?>
+                                $
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            <?php endwhile; ?>
+
+            <?php
+        else:
+            echo '<p>No posts found.</p>';
+        endif;
+
+        // Reset post data
+        wp_reset_postdata();
+        ?>
     </div>
-
     <div class="see-more">
         <button class="inactive-button">See More</button>
     </div>
